@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+ 
+
+*{
+    font-family: "Almarai", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: antiquewhite;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px  ;
+}
+
+.logo{
+    text-decoration: none;
+    color: #0a3d15;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    color: #0a3d15;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #fff782bd;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/11.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: #ffffff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(98, 103, 150);
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #ffffff;
+    background-color: #fff782bd;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #fff782e5;
+    transform: scale(1.1);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #0a3d15;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card { 
+    background-color: #ffffff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease; }
+
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #72ad72;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #e4ff84;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.our {
+    background-color: #ffefa7be;
+}
+
+.our p {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+footer {
+    display: flex;
+}
+
+.logo-img {
+    width: 50px; /* حجم العرض اللي تبغينه */
+    height: auto;
+    margin-right: 10px; /* مسافة بين الصورة والاسم */
+    vertical-align: middle; /* عشان يتوسط مع النص */
+}
+
+
+/* للموبايلات الصغيرة */
+@media (max-width: 600px) {
+    header {
+      padding: 10px 20px;
+      flex-direction: column;
+    }
+  
+    .navigation a {
+      padding: 10px;
+      display: block;
+      text-align: center;
+    }
+  
+    section {
+      padding: 50px 20px;
+    }
+  
+    .main h2 span {
+      font-size: 2em;
+    }
+  
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  }
+  
+  /* للأجهزة اللوحية (تابلتات) */
+  @media (max-width: 992px) {
+    header {
+      padding: 10px 50px;
+    }
+  
+    section {
+      padding: 70px 50px;
+    }
+  
+    .content {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .card {
+      width: 45%;
+    }
+  }
+  
+
+
